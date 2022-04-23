@@ -6,7 +6,7 @@ import Zbiorka from "../components/zbiorka/Zbiorka.js";
 export default function RaiseListView() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8080/api/v1/fundraisers")
+    fetch("http://localhost:8000/api/v1/fundraisers")
       .then((response) => response.json())
       .then((data) => {
         let d = [];
@@ -20,6 +20,7 @@ export default function RaiseListView() {
             />
           );
         });
+
         setData(d);
       });
   }, []);
@@ -31,7 +32,6 @@ export default function RaiseListView() {
       </div>
 
       <div className="list-view">{data}</div>
-
     </div>
   );
 }
