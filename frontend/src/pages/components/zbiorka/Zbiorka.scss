@@ -11,10 +11,16 @@
   
  
 
-}
-.box{
+} 
+@media screen and (min-width: 1024px) {
+
+   
+    .box{
     display: flex;
 }
+    
+}
+
 .name{
     font-size: 1.5em;
     
@@ -23,6 +29,7 @@
     display: inline;
     color: darkgray;
     font-weight: lighter;
+    font-size: medium;
 
     
 }
@@ -43,28 +50,31 @@
 .h2{
     color: darkgray;
     font-weight: lighter;
+    font-size: medium;
 }
-.filtry{
-    
-    float: left;
-    width: 25%;
 
+.filtry{
+  
+   
+    min-width: 50px;
+    font-size: x-small;
     text-align: center;
     border-color: lightgray;
     border-radius: 20px;
     border-style: solid;
     border-width: 1px;
-    padding: 10px;
-    margin: 0 5px;
+    padding: 5px;
+    margin: 0 3px;
     font-weight: bold;
     color: lightgray;
     margin-bottom: 20px;
+    
 
 }
 .filtry:first-child{
     color: white;
-    background-color: $medium-slate-blue;
-    border-color: $medium-slate-blue;
+    background: linear-gradient(180deg,  $gradient1-1 0%,  $gradient1-2  100%);
+    border-width: 0px;
 
 }
 .opis{
