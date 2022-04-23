@@ -7,12 +7,13 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 router.get("/", async (req, res) => {
+  let user = req.body;
   let rows = db
     .prepare(`SELECT * FROM users WHERE username = ?`)
-    .all(req.query.username); // todo: zmienic na czytanie z jsona
-  let user = rows[0];
-  var PHash = bcrypt.hashSync(user.password, 10);
-  const result = await bcrypt.compare(req.query.password, user.password); // todo: tu tez
+    .all(req.body.username)[0];
+  var PHash = bcrypt.hashSync(rows.password, 10);
+
+  const result = await bcrypt.compare(req.body.password, rows.password);
   if (result) {
     // * CREATE JWT TOKEN
     const token = jwt.sign(
