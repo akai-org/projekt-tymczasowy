@@ -9,6 +9,21 @@
     display: flex;
     width: 50%;
     height: 70px;
+
+    }
+    .list-view{
+        
+        justify-content: center;
+     
+        column-gap: 90px;
+        row-gap: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+}
+
   }
   .list-view {
     justify-content: center;
@@ -18,3 +33,4 @@
     flex-wrap: wrap;
   }
 }
+
