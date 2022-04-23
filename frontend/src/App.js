@@ -3,13 +3,16 @@ import "./App.scss";
 import { Layout } from "./Layout";
 import { Homepage } from "./pages/Homepage/Homepage";
 import RaiseListView from "./pages/raiseListView/RaiseListView";
-
+import NavBar from "./pages/NavBar/NavBar";
 function App() {
   return (
-    <Layout>
-      <Homepage />
-      <RaiseListView></RaiseListView>
-    </Layout>
+    <>
+      <NavBar></NavBar>
+      <Layout>
+        <Homepage />
+        <RaiseListView></RaiseListView>
+      </Layout>
+    </>
   );
 }
 
