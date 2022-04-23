@@ -1,11 +1,23 @@
 @import "../../../colors.scss";
 .button-main{
+    user-select:none;
+    transition: 0.2s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     background-color:$celtic-blue;
     width:100%;
     height: 100%;
     border-radius: 15px;
-    text-align: center;
     font-size: medium;
-    
-
+    &:hover{
+        opacity: 0.8;
+        cursor:pointer;
+         box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.15);
+    }
+  &:active{
+       opacity: 1;
+       box-shadow:none;
+  }
 }
