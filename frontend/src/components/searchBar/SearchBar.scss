@@ -10,8 +10,10 @@ border-radius: 30px;
 display:flex;
 justify-content: center;
 align-items: center;
+
 gap:5px;
 input{
+
     padding-left: 10px;
     outline: none;
     font-size:2em;
@@ -21,6 +23,14 @@ input{
     height:100%;
     border-radius: 30px;
     border: none;
+    display: flex;
+    &::placeholder{
+        position: absolute;
+        top:37%;
+        align-items: center;
+            justify-self: center;
+            font-size: 18px;
+    }
 }
 .search-button{
     margin-right: 10px;
@@ -35,7 +45,6 @@ input{
         font-size:1.9em;
         color: black;
     }
-   
 }
 }
 }
