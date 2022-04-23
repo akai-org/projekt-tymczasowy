@@ -6,7 +6,7 @@ const db = require("better-sqlite3")("database.db");
 const dotenv = require("dotenv");
 dotenv.config();
 
-router.get("/", async (req, res) => {
+router.post("/", async (req, res) => {
   let user = req.body;
   let rows = db
     .prepare(`SELECT * FROM users WHERE username = ?`)
