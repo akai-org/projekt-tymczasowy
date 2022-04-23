@@ -1,0 +1,56 @@
+@import "../../colors.scss";
+.zbiorka-main{
+    background-color:white;
+    width: 33%;
+    box-shadow: 0 0 5px 5px #cfd9dd;
+    border-radius: 25px;  
+    text-align: left;
+    padding: 15px;
+    color: black;
+  
+ 
+
+}
+.name{
+    font-size: 1.5em;
+    
+}
+.miasto{
+    display: inline;
+    color: darkgray;
+
+    
+}
+.pasek{
+    background-color: rgb(241, 242, 238);
+    height: 18px;
+    border-radius: 10px;
+    width: 100%;
+    .pasek2{
+    background-color:$medium-slate-blue;
+    height: 18px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+}
+.filtry{
+    
+    float: left;
+    width: 25%;
+
+    text-align: center;
+    border-color: lightgray;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    margin: 0 5px;
+    font-weight: bold;
+    color: lightgray;
+
+}
+.filtry:first-child{
+    color: white;
+    background-color: $medium-slate-blue;
+}
