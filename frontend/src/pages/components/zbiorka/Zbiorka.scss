@@ -1,58 +1,56 @@
 @import "../../../colors.scss";
-.zbiorka-main{
-    background-color:white;
-    width: 20%;
-    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.05);
-    border-radius: 27px;
-    text-align: left;
-    padding:40px;
-  
-    color: black;
-  
- @media screen and (min-width: 1024px) {
+.zbiorka-main {
+  background-color: white;
+  width: 20%;
+  box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 27px;
+  text-align: left;
+  padding: 40px;
 
-   
-    .boxx{
-    display: flex;
-}
-    
-}
+  cursor: pointer;
 
-.name{
+  transition: box-shadow 0.5s ease;
+  &:hover {
+    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  color: black;
+
+  @media screen and (min-width: 1024px) {
+    .boxx {
+      display: flex;
+    }
+  }
+
+  .name {
     font-size: 1.5em;
-    
-}
-.miasto{
+  }
+  .miasto {
     display: inline;
     color: darkgray;
     font-weight: lighter;
     font-size: medium;
-
-    
-}
-.pasek{
+  }
+  .pasek {
     background-color: rgb(241, 242, 238);
     height: 13px;
     border-radius: 10px;
     width: 100%;
-    .pasek2{
-    background-color:$celtic-blue;
-    height: 13px;
-    border-radius: 10px;
-    width: 50%;
-}
-}
+    .pasek2 {
+      background-color: $celtic-blue;
+      height: 13px;
+      border-radius: 10px;
+      width: 50%;
+    }
+  }
 
-
-.h2{
+  .h2 {
     color: darkgray;
     font-weight: lighter;
     font-size: medium;
-}
+  }
 
-.filtry{
-  
-   
+  .filtry {
     min-width: 50px;
     font-size: x-small;
     text-align: center;
@@ -65,19 +63,14 @@
     font-weight: bold;
     color: lightgray;
     margin-bottom: 20px;
-    
-
-}
-.filtry:first-child{
+  }
+  .filtry:first-child {
     color: white;
-    background: linear-gradient(180deg,  $gradient1-1 0%,  $gradient1-2  100%);
+    background: linear-gradient(180deg, $gradient1-1 0%, $gradient1-2 100%);
     border-width: 0px;
-
-}
-.opis{
+  }
+  .opis {
     margin-top: 10px;
-      color: darkgray;
+    color: darkgray;
+  }
 }
-
-
-} 

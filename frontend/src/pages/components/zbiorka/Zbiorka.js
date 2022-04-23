@@ -4,7 +4,7 @@ function Zbiorka() {
   return (
     <div className="zbiorka-main">
       <h1 class="name">
-        Nazwa zbiórki <p class="miasto">Poznań</p>{" "}
+        Nazwa zbiórki <p class="miasto">&bull; Poznań</p>{" "}
       </h1>
       <div class="pasek">
         <div class="pasek2"></div>

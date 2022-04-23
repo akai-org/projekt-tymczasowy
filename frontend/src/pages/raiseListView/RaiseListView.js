@@ -18,11 +18,11 @@ export default function RaiseListView() {
         <SearchBar placeholder="Szukaj zbiórki..."></SearchBar>
       </div>
       <div className="list-view">
-        <Zbiorka></Zbiorka>
-        <Zbiorka></Zbiorka>
-        <Zbiorka></Zbiorka>
-        <Zbiorka></Zbiorka>
-        <Zbiorka></Zbiorka>
+        <Zbiorka />
+        <Zbiorka />
+        <Zbiorka />
+        <Zbiorka />
+        <Zbiorka />
       </div>
     </div>
   );
