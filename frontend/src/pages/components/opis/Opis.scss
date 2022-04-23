@@ -9,32 +9,116 @@
   
     color: black;
 } 
+span{
+    color: darkgray;
+}
+.name2{
+    font-size: 2em;
+}
 .pasek{
     background-color: rgb(241, 242, 238);
     height: 13px;
     border-radius: 10px;
     width: 100%;
     .pasek2{
-    background-color:$celtic-blue;
+    background-color:$text-box2;
     height: 13px;
     border-radius: 10px;
     width: 60%;
 }
 }
 
-.filtry{
+.filtry2{
     color: white;
 background: linear-gradient(180deg,  $gradient1-1 0%,  $gradient1-2  100%);
 width:  100px;
-font-size: x-small;
+font-size: medium;
 text-align: center;
 padding: 5px;
-    margin: 0 3px;
+    margin: 15px 3px;
     font-weight: bold;
+    border-radius: 20px;
 
 }
-.h2{
-    font-size: x-large;
+h2{
+    font-size: 2em;
     color: black;
     font-weight: bold;
+}
+
+.boxxx{
+    border: 1px solid #E8E8E8;
+box-sizing: border-box;
+border-radius: 25px;
+    margin: 20px auto;
+    padding: 20px 60px;
+ 
+    
+}
+.punkty{
+  font-size: x-large;
+
+  color:   $text-box2;
+  font-weight: bolder;
+}
+.sztk{
+    display: inline;
+    font-size: small;
+    color: darkgray;
+}
+
+.box-container{
+    text-align: center;
+  
+}
+@media screen and (min-width: 1024px) {
+.box-container{
+    
+    display: flex;
+}}
+
+
+.button2{
+    color: white;
+    background: $text-box2;
+    width:  100px;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: center;
+    padding: 15px;
+        margin: 15px auto;
+        font-weight: bold;
+        border-radius: 20px;
+
+}
+h3{
+    color: $text-box2;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.arrow{
+    color:   $text-box2;
+}
+.all:first-child{
+
+h3{
+    color: $text-box;
+}
+
+.button2{
+    background: linear-gradient(180deg, $gradient2-1 0%,  $gradient2-2 100%);
+}
+.punkty{
+    color:$text-box;
+}
+.arrow{
+    color:   $text-box;
+}
+
+.pasek2{
+    background-color:$text-box;
+    height: 13px;
+    border-radius: 10px;
+    width: 60%;
+}
 }
