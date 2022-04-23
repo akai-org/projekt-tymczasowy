@@ -32,7 +32,7 @@ where r.fundraiser_id = ?`).all(row.fundraiser_id);
   					category_name: req.category_name,
   					priority: req.priority,
   					category_id: req.category_id,
-  					required_quantity: req.required_quantity,
+  					required_quantity: 0,
   					current_quantity: 0
   				};
   			}
@@ -42,6 +42,7 @@ where r.fundraiser_id = ?`).all(row.fundraiser_id);
   			);
 
   			categories[req.category_id].current_quantity += req.current_quantity;
+  			categories[req.category_id].required_quantity += req.required_quantity;
   		}
 
   		let categoriesList = [];
