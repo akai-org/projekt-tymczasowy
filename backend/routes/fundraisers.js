@@ -31,13 +31,17 @@ where r.fundraiser_id = ?`).all(row.fundraiser_id);
   				categories[req.category_id] = {
   					category_name: req.category_name,
   					priority: req.priority,
-  					category_id: req.category_id
+  					category_id: req.category_id,
+  					required_quantity: req.required_quantity,
+  					current_quantity: 0
   				};
   			}
   			categories[req.category_id].priority = Math.max(
   				categories[req.category_id].priority,
   				req.priority
   			);
+
+  			categories[req.category_id].current_quantity += req.current_quantity;
   		}
 
   		let categoriesList = [];
