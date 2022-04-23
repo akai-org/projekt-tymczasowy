@@ -3,8 +3,10 @@ import "./Zbiorka.scss";
 function Zbiorka({ nazwa, miasto, opis }) {
   return (
     <div className="zbiorka-main">
+
       <h1 class="name">{nazwa}</h1>
       <h4 class="miasto">{miasto}</h4>
+
       <div class="pasek">
         <div class="pasek2"></div>
       </div>

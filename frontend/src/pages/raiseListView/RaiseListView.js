@@ -29,7 +29,9 @@ export default function RaiseListView() {
       <div className="search-bar">
         <SearchBar placeholder="Szukaj zbiórki..."></SearchBar>
       </div>
+
       <div className="list-view">{data}</div>
+
     </div>
   );
 }

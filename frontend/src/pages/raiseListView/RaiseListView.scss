@@ -1,15 +1,15 @@
-.main-list-view{
+.main-list-view {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  row-gap: 40px;
+  .search-bar {
     display: flex;
-    width: 100%;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    row-gap: 40px;
-    .search-bar{
-   
-    display:flex;
     width: 50%;
     height: 70px;
+
     }
     .list-view{
         
@@ -23,3 +23,14 @@
     }
 
 }
+
+  }
+  .list-view {
+    justify-content: center;
+    column-gap: 90px;
+    row-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+

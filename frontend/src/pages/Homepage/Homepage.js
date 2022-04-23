@@ -16,7 +16,7 @@ export function Homepage() {
           <Button
             bgcolor="white"
             color="black"
-            content="Stwórz zbiórka"
+            content="Stwórz zbiórkę"
           ></Button>
         </div>
       </div>
