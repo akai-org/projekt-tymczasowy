@@ -5,7 +5,7 @@ function Zbiorka() {
 
     <h1 class="name">Nazwa zbiórki <p class ="miasto">Poznań</p> </h1>
       <div class="pasek"><div class="pasek2"></div></div>
-      <h2 >Potrzebne</h2>
+      <h2 class="h2" >Potrzebne:</h2>
       <div  class="box">
           <div class="filtry">UBRANIA</div>
           <div class="filtry">LEKI</div>
