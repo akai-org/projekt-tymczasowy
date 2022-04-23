@@ -1,4 +1,5 @@
 import "./Homepage.scss";
+import Button from "../components/button/Button.js"
 
 export function Homepage() {
     return (
@@ -6,7 +7,9 @@ export function Homepage() {
             <div className="greeting">
                 <h1>Tinder dla zbiórek</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <button>Zapisz się na zbiórkę</button>
+                <div className="button">
+                    <Button content="Zapisz się na zbiórkę"/>
+                </div>
             </div>
 
             <div className="image">
