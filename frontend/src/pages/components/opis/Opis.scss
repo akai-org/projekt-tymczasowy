@@ -8,7 +8,33 @@
     padding:40px;
   
     color: black;
-  
- 
-
 } 
+.pasek{
+    background-color: rgb(241, 242, 238);
+    height: 13px;
+    border-radius: 10px;
+    width: 100%;
+    .pasek2{
+    background-color:$celtic-blue;
+    height: 13px;
+    border-radius: 10px;
+    width: 60%;
+}
+}
+
+.filtry{
+    color: white;
+background: linear-gradient(180deg,  $gradient1-1 0%,  $gradient1-2  100%);
+width:  100px;
+font-size: x-small;
+text-align: center;
+padding: 5px;
+    margin: 0 3px;
+    font-weight: bold;
+
+}
+.h2{
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+}

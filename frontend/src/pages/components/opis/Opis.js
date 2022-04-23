@@ -10,23 +10,23 @@ function Opis() {
       <div>
       <span>Poznań  •  ul. Jana Matejki 32/42  23-244 </span>
       </div>
-
+      <span>Koniec zbiórki</span>
+      <div>
+      <span>24.08.2022 </span>
+      </div>  
+       <span>Osiągnięto 60% celu</span>
       <div class="pasek">
         <div class="pasek2"></div>
       </div>
+   
       <div class="filtry">Główny cel</div>
-      <h2 class="h2">Potrzebne:</h2>
-      <div class="box">
-        
-        <div class="filtry">LEKI</div>
-        <div class="filtry">ZABAWKI</div>
-      </div>
-      <div class="opis">
-        <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        </span>
-      </div>
+      <h2 class="h2">Odzież</h2>
+    <div class="box-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
     </div>
   );
 }
