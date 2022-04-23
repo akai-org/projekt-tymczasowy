@@ -1,16 +1,19 @@
-@import "../../colors.scss";
+@import "../../../colors.scss";
 .zbiorka-main{
     background-color:white;
-    width: 35%;
+    width: 20%;
     box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.05);
     border-radius: 27px;
     text-align: left;
-    padding:50px;
+    padding:40px;
   
     color: black;
   
  
 
+}
+.box{
+    display: flex;
 }
 .name{
     font-size: 1.5em;
