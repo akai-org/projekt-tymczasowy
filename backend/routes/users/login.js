@@ -6,7 +6,7 @@ const db = require("better-sqlite3")("database.db");
 const dotenv = require("dotenv");
 dotenv.config();
 
-router.get("/", async (req, res) => {
+router.post("/", async (req, res) => {
   let user = req.body;
   let rows = db
     .prepare(`SELECT * FROM users WHERE username = ?`)
@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
     // * CREATE JWT TOKEN
     const token = jwt.sign(
       {
-        user_id: user.id,
+        user_id: user.user_id,
         username: user.username,
         account_type: user.account_type,
       },

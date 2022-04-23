@@ -2,13 +2,17 @@ var express = require("express"),
   router = express.Router();
 
 const db = require('better-sqlite3')('database.db');
+const auth = require("../auth");
 
 router
-	.get("/", function (req, res) {
+	.get("/", auth, function (req, res) {
 	res.send("Hello Users");
 	})
+	.use("/login", require("./users/login"))
+	.use("/register", require("./users/register"))
 
-	.get("/:uid", function (req, res) {
+	.get("/:uid", auth, function (req, res) {
+		if (!req.user) return res.sendStatus(403);
 		let user = db.prepare(`select uu.*, u.points from v_users as uu inner join users as u on u.user_id = uu.user_id where u.user_id = ?`)
 			.all(req.params.uid);
 		if (!user.length) {
@@ -18,7 +22,7 @@ router
 
 	  	user = user[0];
 
-	  	let declarations = db.prepare(`select d.*, p.name as product_name, pp.name as category_name, pp.product_id as category_id, f.name, f.city, f.street, f.postcode, f.finish_date, f.latitude, f.longitude
+	  	let declarations = db.prepare(`select d.*, p.name as product_name, p.carbon_footprint, pp.name as category_name, pp.product_id as category_id, f.name, f.city, f.street, f.postcode, f.finish_date, f.latitude, f.longitude
 	from declarations as d
 	inner join products as p 
 	on p.product_id = d.product_id
@@ -73,9 +77,8 @@ where dp.donation_id = ?;`).all(row.donation_id);
 
 
 		res.json({"success": true, "user": user, "rewards": rewards});
-	})
+	});
 
-	.use("/login", require("./users/login"))
-	.use("/register", require("./users/register"));
+	
 
 module.exports = router;
