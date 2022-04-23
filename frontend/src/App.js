@@ -1,7 +1,13 @@
 import "./App.scss";
+import { Layout } from "./Layout";
+import { Homepage } from "./pages/Homepage/Homepage";
 
 function App() {
-  return <h1>Hello</h1>;
+  return (
+    <Layout>
+      <Homepage />
+    </Layout>
+  );
 }
 
 export default App;
