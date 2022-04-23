@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.scss";
-function Button() {
-  return <div className="button-main">test</div>;
+function Button(props) {
+  return <div className="button-main">{props.content}</div>;
 }
 
 export default Button;
