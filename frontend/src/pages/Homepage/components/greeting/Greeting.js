@@ -1,5 +1,6 @@
 
 import Button from "../../../components/button/Button";
+import { Link } from "react-router-dom";
 import "./Greeting.scss";
 
 export default function Greeting() {
@@ -14,7 +15,7 @@ export default function Greeting() {
           scrambled it to make a type specimen book.
         </p>
         <div className="btn">
-          <Button content="Zapisz się na zbiórkę"></Button>
+          <Link to="/login"><Button content="Zapisz się na zbiórkę"></Button></Link>
           <Button
             bgcolor="white"
             color="black"
