@@ -1,7 +1,15 @@
 import "./App.scss";
-import Button from "./components/button/Button.js";
+
+import { Layout } from "./Layout";
+import { Homepage } from "./pages/Homepage/Homepage";
+
 function App() {
-  return <Button></Button>;
+  return (
+    <Layout>
+      <Homepage />
+    </Layout>
+  );
+
 }
 
 export default App;
