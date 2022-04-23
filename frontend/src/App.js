@@ -1,7 +1,7 @@
 import "./App.scss";
-
+import Button from "./components/button/Button.js";
 function App() {
-  return <h1>Hello</h1>;
+  return <Button></Button>;
 }
 
 export default App;
