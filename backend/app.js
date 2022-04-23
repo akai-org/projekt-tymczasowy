@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const BodyParser = require("body-parser");
+
+app.use(BodyParser());
 
 const auth = require("./auth");
 app.get("/", auth, (req, res) => {
