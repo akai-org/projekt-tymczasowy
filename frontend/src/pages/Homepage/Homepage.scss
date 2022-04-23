@@ -10,7 +10,17 @@
 }
 
 .greeting {
+    text-align: left;
     width: 400px;
+    .btn{  
+        gap: 10px;
+            display: flex;
+            flex-direction: column;       
+            width: 100%;
+            height:90px;
+            
+            
+    }
 }
 
 .image {
