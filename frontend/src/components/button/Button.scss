@@ -1,5 +1,9 @@
+@import "../../colors.scss";
 .button-main{
-    background-color:white;
+    background-color:$celtic-blue;
     width:100px;
     height: 30px;
+    border-radius: 15px;
+    text-align: center;
+
 }
