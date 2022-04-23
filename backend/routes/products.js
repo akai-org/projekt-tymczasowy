@@ -1,12 +1,40 @@
 var express = require('express'),
     router = express.Router();
 
+const db = require('better-sqlite3')('database.db');
+
 router
   .get('/', function(req, res){
-  	res.send("Hello Products");
-  })
+  	const products = db.prepare(`select * from products`).all();
+  	let categories = {};
 
-  //.use('/login', require('./users/login'))
-  //.use('/register', require('./users/register'));
+  	for (let product of products) {
+  		if (product.parent_id == null) {
+  			categories[product.product_id] = {
+  				category_id: product.product_id,
+  				name: product.name,
+  				products: []
+  			}
+  		}
+  	}
+
+  	for (let product of products) {
+  		if (product.parent_id != null) {
+  			categories[product.parent_id].products.push({
+  				product_id: product.product_id,
+  				name: product.name,
+  				carbon_footprint: product.carbon_footprint
+  			});
+  		}
+  	}
+
+  	let productsTree = [];
+  	for (let categoryId in categories) {
+  		productsTree.push(categories[categoryId]);
+  	}
+
+  	res.json({"success": true, "products": productsTree});
+  });
+
  
 module.exports = router;
