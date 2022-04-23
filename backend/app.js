@@ -6,11 +6,8 @@ const cors = require("cors");
 
 app.use(BodyParser());
 
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors());
+app.options("*", cors());
 
 const auth = require("./auth");
 app.get("/", auth, (req, res) => {
