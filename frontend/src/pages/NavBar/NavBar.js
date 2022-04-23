@@ -7,10 +7,10 @@ export default function NavBar() {
       <div className="title">Tinder dla zbórek</div>
       <div className="button-group">
         <div className="btn">
-          <Button content="test"></Button>
+          <Button content="Zbiórki"></Button>
         </div>
         <div className="btn">
-          <Button content="test"></Button>
+          <Button content="Zaloguj się"></Button>
         </div>
       </div>
     </div>
