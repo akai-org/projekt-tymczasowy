@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
     // * CREATE JWT TOKEN
     const token = jwt.sign(
       {
-        user_id: user.id,
+        user_id: user.user_id,
         username: user.username,
         account_type: user.account_type,
       },

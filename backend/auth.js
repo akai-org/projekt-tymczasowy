@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 function authenticateToken(req, res, next) {
-  const authHeader = req.headers["authorization"];
+  const authHeader = req.headers["Authorization"];
   let token;
   if (authHeader) {
     let token = authHeader && authHeader.split(" ")[1];
@@ -11,12 +11,8 @@ function authenticateToken(req, res, next) {
 
   if (token == null)
     token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pY2hhbCIsImFjY291bnRfdHlwZSI6MSwiaWF0IjoxNjUwNzE3NzI3LCJleHAiOjE2NTA4OTA1Mjd9.bhXg8sWINAJeW2MGL0MPdmrBf45QgV3Pya9L6-c2NGE";
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InphcHBzIiwiYWNjb3VudF90eXBlIjoxLCJpYXQiOjE2NTA3MjE4MzIsImV4cCI6MTY1MDg5NDYzMn0.FskpBD8Whn-BEEiRsYImNkyuAbfg3XSmCsw66A9WQaM";
   jwt.verify(token, process.env.TOKEN_KEY, (err, user) => {
-    console.log(err);
-
-    if (err) return res.sendStatus(403);
-
     req.user = user;
 
     next();
