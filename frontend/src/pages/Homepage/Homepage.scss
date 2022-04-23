@@ -1,9 +1,12 @@
+@import "../../colors.scss";
+
 .content {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100%;
     width: 100%;
+   color: black;
 }
 
 .greeting {
@@ -14,4 +17,8 @@
     img {
         width: 300px;
     }
+}
+h1{
+    color:  $title-color;
+    
 }
