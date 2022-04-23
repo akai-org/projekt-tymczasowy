@@ -10,7 +10,7 @@ function Zbiorka() {
         <div class="pasek2"></div>
       </div>
       <h2 class="h2">Potrzebne:</h2>
-      <div class="box">
+      <div class="boxx">
         <div class="filtry">UBRANIA</div>
         <div class="filtry">LEKI</div>
         <div class="filtry">ZABAWKI</div>
