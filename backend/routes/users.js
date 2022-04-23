@@ -22,7 +22,7 @@ router
 
 	  	user = user[0];
 
-	  	let declarations = db.prepare(`select d.*, p.name as product_name, pp.name as category_name, pp.product_id as category_id, f.name, f.city, f.street, f.postcode, f.finish_date, f.latitude, f.longitude
+	  	let declarations = db.prepare(`select d.*, p.name as product_name, p.carbon_footprint, pp.name as category_name, pp.product_id as category_id, f.name, f.city, f.street, f.postcode, f.finish_date, f.latitude, f.longitude
 	from declarations as d
 	inner join products as p 
 	on p.product_id = d.product_id
