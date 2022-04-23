@@ -19,7 +19,7 @@ on r.reward_id = rs.reward_id and r.user_id =?
 group by rs.reward_id;`).all(userId);
   	res.json({"success": true, "rewards": rewards});
   })
-  .get('/:id/redeem', auth, function(req, res){
+  .post('/:id/redeem', auth, function(req, res){
     if (!req.user) return res.sendStatus(403);
 
     const reward = db.prepare(`select * from rewards where reward_id = ?`).all(req.params.id);
