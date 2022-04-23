@@ -1,0 +1,70 @@
+@import "../../colors.scss";
+.zbiorka-main{
+    background-color:white;
+    width: 35%;
+    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 27px;
+    text-align: left;
+    padding:50px;
+  
+    color: black;
+  
+ 
+
+}
+.name{
+    font-size: 1.5em;
+    
+}
+.miasto{
+    display: inline;
+    color: darkgray;
+    font-weight: lighter;
+
+    
+}
+.pasek{
+    background-color: rgb(241, 242, 238);
+    height: 13px;
+    border-radius: 10px;
+    width: 100%;
+    .pasek2{
+    background-color:$celtic-blue;
+    height: 13px;
+    border-radius: 10px;
+    width: 50%;
+}
+}
+
+
+.h2{
+    color: darkgray;
+    font-weight: lighter;
+}
+.filtry{
+    
+    float: left;
+    width: 25%;
+
+    text-align: center;
+    border-color: lightgray;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    margin: 0 5px;
+    font-weight: bold;
+    color: lightgray;
+    margin-bottom: 20px;
+
+}
+.filtry:first-child{
+    color: white;
+    background-color: $medium-slate-blue;
+    border-color: $medium-slate-blue;
+
+}
+.opis{
+    margin-top: 10px;
+      color: darkgray;
+}
