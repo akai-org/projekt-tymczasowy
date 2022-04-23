@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./RaiseListView.scss";
-import SearchBar from "../components/searchBar/SearchBar.js";
-import Zbiorka from "../components/zbiorka/Zbiorka.js";
+import "./RaiseListView.scss"
+import SearchBar from  '../../../components/searchBar/SearchBar'
+import Zbiorka from  '../../../components/zbiorka/Zbiorka'
 
 export default function RaiseListView() {
   const [data, setData] = useState([]);
