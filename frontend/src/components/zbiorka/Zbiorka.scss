@@ -1,7 +1,7 @@
 @import "../../colors.scss";
 .zbiorka-main{
     background-color:white;
-    width: 462px;
+    width: 35%;
     box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.05);
     border-radius: 27px;
     text-align: left;
@@ -29,7 +29,7 @@
     border-radius: 10px;
     width: 100%;
     .pasek2{
-    background-color:$medium-slate-blue;
+    background-color:$celtic-blue;
     height: 13px;
     border-radius: 10px;
     width: 50%;
@@ -64,8 +64,7 @@
     border-color: $medium-slate-blue;
 
 }
-
-span{
-    color: darkgray;
-  
+.opis{
+    margin-top: 10px;
+      color: darkgray;
 }
