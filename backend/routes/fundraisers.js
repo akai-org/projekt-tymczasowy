@@ -58,7 +58,23 @@ where r.fundraiser_id = ?`).all(row.fundraiser_id);
   	}
 
   	res.json({"success": true, "fundraisers": fundraisers});
+  })
+  .post('/:id/subscribe', auth, function(req, res){
+    if (!req.user) return res.sendStatus(403);
+    const fundraisers = db.prepare(`insert or ignore into subscriptions (user_id, fundraiser_id) values (?, ?);`).run(req.user.user_id, req.params.id);
+    
+
+    res.json({"success": true});
+  })
+  .post('/:id/unsubscribe', auth, function(req, res){
+    if (!req.user) return res.sendStatus(403);
+    const fundraisers = db.prepare(`delete from subscriptions where user_id = ? and fundraiser_id = ?;`).run(req.user.user_id, req.params.id);
+    
+
+    res.json({"success": true});
   });
+  //.use("", require("./fundraisers/subscribe"))
+  //.use("/:id/unsubscribe", require("./fundraisers/unsubscribe"));
 
  
 module.exports = router;
