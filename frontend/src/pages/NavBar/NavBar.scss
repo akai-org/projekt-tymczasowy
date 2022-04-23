@@ -1,26 +1,39 @@
 @import "../../colors.scss";
-.nav-main{
+.nav-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+
+  .title {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: $title-color;
+  }
+  .button-group {
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 40px;
     display: flex;
-    background-color:rgb(255, 255, 255);
-    padding: 10px;
-    .title{
-        font-weight: bold;
-        font-size: 1.4em;
-        color: $title-color;
+    align-items: center;
+
+    .btn {
+      display: flex;
+
+      width: 150px;
+      height: 30px;
     }
-    .button-group{
-        gap: 20px;
-        margin-left: auto;
-        margin-right: 40px;
-        display: flex;
-       
-     .btn{
-         display: flex;
-        
-       
-         width: 150px;
-         height: 30px
-     }   
-    }
-    
+  }
+}
+
+.link {
+  color: #5154a5;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
