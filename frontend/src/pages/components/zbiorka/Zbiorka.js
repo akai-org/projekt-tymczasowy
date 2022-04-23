@@ -1,11 +1,10 @@
 import React from "react";
 import "./Zbiorka.scss";
-function Zbiorka() {
+function Zbiorka({ nazwa, miasto, opis }) {
   return (
     <div className="zbiorka-main">
-      <h1 class="name">
-        Nazwa zbiórki <p class="miasto">Poznań</p>{" "}
-      </h1>
+      <h1 class="name">{nazwa}</h1>
+      <h4 class="miasto">{miasto}</h4>
       <div class="pasek">
         <div class="pasek2"></div>
       </div>
@@ -16,10 +15,7 @@ function Zbiorka() {
         <div class="filtry">ZABAWKI</div>
       </div>
       <div class="opis">
-        <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        </span>
+        <span>{opis}</span>
       </div>
     </div>
   );

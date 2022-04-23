@@ -5,11 +5,23 @@ import Zbiorka from "../components/zbiorka/Zbiorka.js";
 
 export default function RaiseListView() {
   const [data, setData] = useState([]);
-
   useEffect(() => {
     fetch("http://localhost:8080/api/v1/fundraisers")
       .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        let d = [];
+        data["fundraisers"].forEach((element) => {
+          console.log(element);
+          d.push(
+            <Zbiorka
+              miasto={element.city}
+              nazwa={element.name}
+              opis={element.description}
+            />
+          );
+        });
+        setData(d);
+      });
   }, []);
 
   return (
@@ -17,13 +29,7 @@ export default function RaiseListView() {
       <div className="search-bar">
         <SearchBar placeholder="Szukaj zbiórki..."></SearchBar>
       </div>
-      <div className="list-view">
-        <Zbiorka></Zbiorka>
-        <Zbiorka></Zbiorka>
-        <Zbiorka></Zbiorka>
-        <Zbiorka></Zbiorka>
-        <Zbiorka></Zbiorka>
-      </div>
+      <div className="list-view">{data}</div>
     </div>
   );
 }
