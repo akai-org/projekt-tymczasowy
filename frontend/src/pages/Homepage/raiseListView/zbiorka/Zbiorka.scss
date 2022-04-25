@@ -1,17 +1,21 @@
-@import "../../../colors.scss";
+@import "../../../../colors.scss";
 .zbiorka-main {
   background-color: white;
   width: 20%;
+  min-width: 250px;
   box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.05);
   border-radius: 27px;
   text-align: left;
   padding: 40px;
-
+  user-select: none;
   cursor: pointer;
-
   transition: box-shadow 0.5s ease;
   &:hover {
     box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+        box-shadow:none;
   }
 
   color: black;
@@ -21,19 +25,13 @@
       display: flex;
     }
   }
-
   .name {
-    font-size: 1.5em;
-
-    
+    font-size: 1.5em; 
 }
 .miasto{
-  
+
     color: darkgray;
     font-weight: lighter;
-   
-
-    
 }
 .pasek{
 

@@ -1,9 +1,8 @@
 import React from "react";
 import "./Zbiorka.scss";
-function Zbiorka({ nazwa, miasto, opis }) {
+function Zbiorka({ nazwa, miasto, opis, onClick }) {
   return (
-    <div className="zbiorka-main">
-
+    <div onClick={onClick} className="zbiorka-main">
       <h1 class="name">{nazwa}</h1>
       <h4 class="miasto">{miasto}</h4>
 

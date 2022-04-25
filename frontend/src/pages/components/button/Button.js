@@ -3,6 +3,7 @@ import "./Button.scss";
 function Button(props) {
   return (
     <div
+      onClick={props.onClick}
       className="button-main"
       style={{ backgroundColor: props.bgcolor, color: props.color }}
     >

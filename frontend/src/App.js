@@ -1,19 +1,22 @@
 import "./App.scss";
 
-import { Layout } from "./Layout";
 import { Homepage } from "./pages/Homepage/Homepage";
-import LoginPage from "./pages/loginPage/LoginPage";
-import RaiseListView from "./pages/raiseListView/RaiseListView";
+import LoginPage from "./pages/LoginPage/LoginPage";
+
+import Description from "./pages/RaiseDescription/Description";
 import NavBar from "./pages/NavBar/NavBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <NavBar></NavBar>
-      <Layout>
-        <Homepage />
-        <RaiseListView></RaiseListView>
-      </Layout>
-    </>
+
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/login" element={<LoginPage />}></Route>
+        <Route path="/description" element={<Description />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

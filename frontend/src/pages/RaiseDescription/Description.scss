@@ -1,0 +1,71 @@
+@import "../../colors.scss";
+
+.description-view {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.opis-main {
+  margin-top: 90px;
+  background-color: white;
+  width: 60%;
+  height: auto;
+  box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 27px;
+  text-align: left;
+  padding: 40px;
+  color: black;
+}
+
+.name2 {
+  font-size: 2em;
+}
+
+.filtry2 {
+  color: white;
+  background: linear-gradient(180deg, $gradient1-1 0%, $gradient1-2 100%);
+  width: 100px;
+  font-size: medium;
+  text-align: center;
+  padding: 5px;
+  margin: 15px 3px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+h2 {
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+}
+
+.button2 {
+  color: white;
+  background: $text-box2;
+  width: 100px;
+  font-size: medium;
+  font-weight: lighter;
+  text-align: center;
+  padding: 15px;
+  margin: 15px auto;
+  font-weight: bold;
+  border-radius: 20px;
+}
+h3 {
+  color: $text-box2;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.arrow {
+  color: $text-box2;
+}
+
+.button2 {
+  background: linear-gradient(180deg, $gradient2-1 0%, $gradient2-2 100%);
+}
+.punkty {
+  color: $text-box;
+}
+.arrow {
+  color: $text-box;
+}

@@ -22,7 +22,9 @@ export default function LoginPage() {
         </div>
 
         <div className="actions">
-          <Button content="Zaloguj się"></Button>
+          <div className="button">
+            <Button content="Zaloguj się"></Button>
+          </div>
           <a className="createAccountCTA">Stwórz konto</a>
         </div>
       </div>

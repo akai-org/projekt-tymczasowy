@@ -1,0 +1,11 @@
+.all {
+  display: gird;
+}
+.box-container {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .box-container {
+    display: flex;
+  }
+}

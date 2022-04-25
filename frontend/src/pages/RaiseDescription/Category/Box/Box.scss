@@ -1,0 +1,19 @@
+@import "../../../../colors.scss";
+.boxxx {
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin: 20px auto;
+  padding: 20px 60px;
+}
+.punkty {
+  font-size: x-large;
+
+  color: $text-box2;
+  font-weight: bolder;
+}
+.sztk {
+  display: inline;
+  font-size: small;
+  color: darkgray;
+}
