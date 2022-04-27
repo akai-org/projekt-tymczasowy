@@ -1,5 +1,6 @@
 import React from "react";
 import "./Zbiorka.scss";
+import Category from "../../../components/category/CategoryC";
 function Zbiorka({ nazwa, miasto, opis, onClick }) {
   return (
     <div onClick={onClick} className="zbiorka-main">
@@ -11,9 +12,9 @@ function Zbiorka({ nazwa, miasto, opis, onClick }) {
       </div>
       <h2 class="h2">Potrzebne:</h2>
       <div class="boxx">
-        <div class="filtry">UBRANIA</div>
-        <div class="filtry">LEKI</div>
-        <div class="filtry">ZABAWKI</div>
+        <Category content="Ubrania"></Category>
+        <Category content="Ubrania"></Category>
+        <Category content="Ubrania"></Category>
       </div>
       <div class="opis">
         <span>{opis}</span>

@@ -6,7 +6,11 @@ import "./Input.scss";
 export default function Input(props) {
   return (
     <div className="input-main">
-      <input type="text" placeholder={props.placeholder}></input>
+      <input
+        type={props.type}
+        onChange={props.onChange}
+        placeholder={props.placeholder}
+      ></input>
     </div>
   );
 }

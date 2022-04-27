@@ -1,14 +1,19 @@
 @import "../../../../colors.scss";
 .boxxx {
+  user-select: none;
+  box-shadow: 7px 2px 24px -10px rgba(66, 68, 90, 1);
   border: 1px solid #e8e8e8;
   box-sizing: border-box;
   border-radius: 25px;
   margin: 20px auto;
   padding: 20px 60px;
+  transition: box-shadow 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 7px 2px 24px -13px rgba(66, 68, 90, 1);
+  }
 }
 .punkty {
   font-size: x-large;
-
   color: $text-box2;
   font-weight: bolder;
 }
@@ -17,3 +22,6 @@
   font-size: small;
   color: darkgray;
 }
+
+
+

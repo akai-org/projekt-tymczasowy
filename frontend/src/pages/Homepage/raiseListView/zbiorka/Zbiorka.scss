@@ -53,25 +53,7 @@
     font-size: medium;
   }
 
-  .filtry {
-    min-width: 50px;
-    font-size: x-small;
-    text-align: center;
-    border-color: lightgray;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px;
-    margin: 0 3px;
-    font-weight: bold;
-    color: lightgray;
-    margin-bottom: 20px;
-  }
-  .filtry:first-child {
-    color: white;
-    background: linear-gradient(180deg, $gradient1-1 0%, $gradient1-2 100%);
-    border-width: 0px;
-  }
+ 
   .opis {
     margin-top: 10px;
     color: darkgray;

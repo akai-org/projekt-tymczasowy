@@ -1,16 +1,16 @@
 import React from "react";
 import "./Category.scss";
 import Box from "./Box/Box";
-import ProgressBar from "./ProgressBar/ProgressBar";
-export default function Category() {
+import ProgressBar from "../../components/ProgressBar/ProgressBar";
+export default function Category({ progress, primary }) {
   return (
     <div class="all">
-      <h2>Odzież</h2>
-      <ProgressBar progress={30}></ProgressBar>
+      <h3>Odzież</h3>
+      <ProgressBar progress={progress} primary={primary}></ProgressBar>
       <div class="box-container">
         <Box name="Koszulki" punkty="50"></Box>
-        <Box name="Spodnie" punkty=" 120pk"></Box>
-        <Box name="Buty" punkty="300pk"></Box>
+        <Box name="Spodnie" punkty=" 120"></Box>
+        <Box name="Buty" punkty="300"></Box>
       </div>
     </div>
   );

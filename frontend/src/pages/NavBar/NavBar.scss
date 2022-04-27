@@ -14,14 +14,13 @@
     color: $title-color;
     user-select: none;
 
-
     transition: text-shadow 0.1s ease-in-out;
-    &:hover{
+    &:hover {
       cursor: pointer;
       text-shadow: 0px 0px 20px #c993ff;
     }
-    &:active{
-       text-shadow: none;
+    &:active {
+      text-shadow: none;
     }
   }
   .button-group {
@@ -32,10 +31,10 @@
     align-items: center;
 
     .btn {
+      column-gap: 10px;
       display: flex;
-
-      width: 150px;
-      height: 30px;
+      width: 190px;
+      height: 35px;
     }
   }
 }

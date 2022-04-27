@@ -1,6 +1,7 @@
 import React from "react";
 import "./Box.scss";
 import { BsArrowUpCircle } from "react-icons/bs";
+import Button2 from "../../../components/button2/Button2";
 export default function Box({ name, punkty }) {
   return (
     <div class="boxxx">
@@ -10,7 +11,7 @@ export default function Box({ name, punkty }) {
         {punkty}pkt
         <p class="sztk">/1szt</p>
       </span>
-      <div class="button2">Wspomóż</div>
+      <Button2 content="Wspomóż"></Button2>
     </div>
   );
 }

@@ -1,12 +1,15 @@
+$celtic-blue: #854ff8;
+$medium-slate-blue: #81d5fa;
+$title-color: #a165dd;
+$navbar-color: #5154a5;
+$unbleached-silk: #f5d3c8ff;
+$gradient1-1: #1cb0f1;
+$gradient1-2: #81d5fa;
+$gradient2-1: #1cb0f1;
+$gradient2-2: #366fc5;
+$text-box: #1cb0f1;
+$text-box2: #5f5f5f;
 
-  $celtic-blue:  #854FF8;
-  $medium-slate-blue: #81D5FA;
-  $title-color: #a165dd;
-  $navbar-color: #5154A5;
-  $unbleached-silk: #f5d3c8ff;
-  $gradient1-1: #1CB0F1;
-  $gradient1-2: #81D5FA;
-  $gradient2-1: #1CB0F1;
-  $gradient2-2: #366FC5;
-  $text-box:#1CB0F1;
-  $text-box2: #5F5F5F;
+:export {
+  blue: $text-box;
+}

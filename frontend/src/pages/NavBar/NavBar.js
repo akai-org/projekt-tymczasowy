@@ -37,6 +37,43 @@ export default function NavBar() {
     </>
   );
 
+  const loggedIn = (
+    <>
+      <a
+        className="link"
+        onClick={() => {
+          navigate("/");
+          setTimeout(() => {
+            scroll();
+          }, 150);
+          scroll();
+        }}
+      >
+        Zbiórki
+      </a>
+
+      <div className="btn">
+        {location.pathname == "/" ? (
+          <Button
+            onClick={() => {
+              navigate("/profile");
+            }}
+            content="Mój Profil"
+          ></Button>
+        ) : (
+          ""
+        )}
+        <Button
+          onClick={() => {
+            sessionStorage.removeItem("token");
+            navigate("/");
+          }}
+          content="Wyloguj się"
+        ></Button>
+      </div>
+    </>
+  );
+
   const onLoginPage = (
     <>
       <a
@@ -57,8 +94,13 @@ export default function NavBar() {
   if (location.pathname == "/login") {
     buttonGrup = onLoginPage;
   } else {
-    buttonGrup = normal;
+    if (sessionStorage.getItem("token") != undefined) {
+      buttonGrup = loggedIn;
+    } else {
+      buttonGrup = normal;
+    }
   }
+
   return (
     <div className="nav-main">
       <div

@@ -1,0 +1,25 @@
+@import "../../../colors.scss";
+.filtry {
+  user-select: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  min-width: 50px;
+  font-size: 75%;
+  text-align: center;
+  border-color: lightgray;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  margin: 0 3px;
+  font-weight: bold;
+  color: lightgray;
+  //   margin-bottom: 20px;
+  height: 100%;
+}
+.filtry:first-child {
+  color: white;
+  background: linear-gradient(180deg, $gradient1-1 0%, $gradient1-2 100%);
+  border-width: 0px;
+}

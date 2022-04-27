@@ -1,0 +1,14 @@
+.profile-main {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  column-gap: 5%;
+  row-gap: 4vh;
+}

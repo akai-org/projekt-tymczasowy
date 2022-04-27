@@ -1,0 +1,13 @@
+.item {
+  width: 100%;
+  display: flex;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #4e4e4e;
+  .name {
+    margin-left: 12%;
+  }
+}
