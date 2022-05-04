@@ -1,0 +1,31 @@
+@import "../../../colors.scss";
+.benefits-main {
+  .benefits-title {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    .title {
+      align-self: center;
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .points {
+      align-self: center;
+      color: $gradient2-1;
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+}

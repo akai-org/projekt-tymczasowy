@@ -6,6 +6,32 @@
   --unbleached-silk: #f5d3c8ff;
 }
 
+html {
+  ::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+    cursor: pointer;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    transition: background-color ease-out 0.2s;
+    border-radius: 10px;
+    background: var(--medium-slate-blue);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: var(--celtic-blue);
+  }
+}
+
 body {
   scroll-behavior: smooth;
   margin: 0;

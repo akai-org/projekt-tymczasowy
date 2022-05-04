@@ -14,11 +14,14 @@ export default function RaiseListView() {
       .then((data) => {
         let d = [];
         data["fundraisers"].forEach((element) => {
-          console.log(element);
           d.push(
             <Zbiorka
               onClick={() => {
-                location("/description");
+                location("/description", {
+                  state: {
+                    raiseId: element.fundraiser_id,
+                  },
+                });
               }}
               miasto={element.city}
               nazwa={element.name}

@@ -1,10 +1,15 @@
 import React from "react";
 // import { blue } from "../../../../colors.scss";
 import "./ProgressBar.scss";
-export default function ProgressBar({ progress, primary }) {
+export default function ProgressBar({ progress, primary, align }) {
   return (
     <div>
-      <span>Osiągnięto {progress}% celu</span>
+      <div
+        className="progress"
+        style={{ textAlign: align ? `${align}` : "left" }}
+      >
+        Osiągnięto {progress}% celu
+      </div>
       <div class="pasek">
         <div
           style={{

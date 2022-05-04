@@ -1,0 +1,18 @@
+@import "../../../../colors.scss";
+
+.subscription-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .subscription-title {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: $title-color;
+  }
+  .labels {
+    justify-content: center;
+    display: flex;
+  }
+}

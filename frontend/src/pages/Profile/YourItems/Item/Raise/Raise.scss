@@ -1,0 +1,17 @@
+@import "../../../../../colors.scss";
+.raise {
+  color: $celtic-blue;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  &:active {
+    color: $title-color;
+  }
+}

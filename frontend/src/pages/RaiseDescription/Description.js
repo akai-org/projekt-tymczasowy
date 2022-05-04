@@ -1,11 +1,22 @@
-import React from "react";
+import { React, useEffect } from "react";
 import "./Description.scss";
 import Button from "../components/button/Button";
 import Category from "./Category/Category";
 import { HiOutlineShare } from "react-icons/hi";
 import RaiseListView from "../Homepage/raiseListView/RaiseListView";
 import CategoryC from "../components/category/CategoryC";
-function Description() {
+import { useLocation } from "react-router-dom";
+function Description(props) {
+  const location = useLocation();
+
+  useEffect(() => {
+    fetch(
+      `http://localhost:8000/api/v1/fundraisers?id=${location.state.raiseId}`
+    )
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  }, []);
+
   return (
     <div className="description-view">
       <div className="opis-main">

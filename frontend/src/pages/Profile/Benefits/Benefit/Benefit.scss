@@ -1,0 +1,33 @@
+@import "../../../../colors.scss";
+
+.benefit-main {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+
+  border: 1px solid #e1e0e0;
+  box-sizing: border-box;
+  border-radius: 30px;
+  align-items: center;
+
+  .name {
+    display: flex;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: $gradient2-1;
+  }
+  .button {
+    margin-left: auto;
+    display: flex;
+    // background-color: red;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+  }
+}
+.active {
+  color: black;
+}

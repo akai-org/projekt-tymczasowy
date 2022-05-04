@@ -1,8 +1,11 @@
 @import "../../../colors.scss";
 
-span {
+.progress {
+  // background-color: red;
+  // text-align: left;
   user-select: none;
   color: darkgray;
+  // text-align: start;
 }
 
 .pasek {

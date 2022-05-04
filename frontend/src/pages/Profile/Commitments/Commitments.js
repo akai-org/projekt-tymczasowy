@@ -11,13 +11,19 @@ export default function Commitments() {
           location="Poznań  •  ul. Jana Matejki 32/42  23-244 "
           points="400"
           time="3"
-        ></Commitment>
+        />
         <Commitment
           name="Zbiórka dla domu dziecka w Łodzi"
           location="Poznań  •  ul. Jana Matejki 32/42  23-244 "
           points="2000"
           time="2"
-        ></Commitment>
+        />
+        <Commitment
+          name="Zbiórka dla domu dziecka w Łodzi"
+          location="Poznań  •  ul. Jana Matejki 32/42  23-244 "
+          points="2000"
+          time="2"
+        />
       </div>
     </div>
   );

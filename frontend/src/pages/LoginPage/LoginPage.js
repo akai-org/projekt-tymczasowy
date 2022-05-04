@@ -13,7 +13,12 @@ export default function LoginPage() {
   const login = () => {
     console.log(username);
     console.log(password);
-    sessionStorage.setItem("token", "token");
+    sessionStorage.setItem("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9");
+    fetch("http://localhost:8000/api/v1/users", {
+      headers: { Authorization: sessionStorage.getItem("token") },
+    })
+      .then((res) => JSON.stringify(res))
+      .then((response) => console.log(response));
     nav("/profile");
   };
 
